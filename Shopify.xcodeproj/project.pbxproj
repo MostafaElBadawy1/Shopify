@@ -191,6 +191,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		A601901B2874A92B00C92281 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A601900D2874A76B00C92281 /* LoginScene */,
+				A601900E2874A77500C92281 /* RegisterScene */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		A654CA6A287396F8008456FC /* ProductDetailsScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +251,7 @@
 			children = (
 				A66D66E72873597000C5BDBE /* AppDelegate */,
 				E24EF3C828737F2A004DC17F /* NetworkManager */,
+				A601901B2874A92B00C92281 /* Auth */,
 				E234B0C32874913F00ABA378 /* Utilites */,
 				E2CA1EF928741687009A762D /* Shopping Cart  */,
 				A66D66F028736A3A00C5BDBE /* Scenes */,
@@ -296,8 +306,6 @@
 		A66D66F028736A3A00C5BDBE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				A601900E2874A77500C92281 /* RegisterScene */,
-				A601900D2874A76B00C92281 /* LoginScene */,
 				E24EF3E12873904C004DC17F /* CategoryScene */,
 				E24EF3E228739069004DC17F /* PersonalScene */,
 				A66D66F128736A4500C5BDBE /* HomeScene */,
