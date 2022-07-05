@@ -14,9 +14,20 @@ class ShoppingCartViewController: UIViewController {
     @IBOutlet weak var myTableView: UITableView!
     
     
+    var db = DBmanger.sharedInstance
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
+
+    var cart = [CartItem]()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        myTableView.reloadData()
+        cart = db.fetchDataCart(appDelegate: appDelegate)
+        
         
         myTableView.register(UINib(nibName: "ShoppingCartTableViewCell", bundle: nil), forCellReuseIdentifier: "shoppingcart")
         
