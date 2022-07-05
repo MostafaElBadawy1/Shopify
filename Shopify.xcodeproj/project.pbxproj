@@ -37,6 +37,7 @@
 		E2CA1F1028741DC0009A762D /* ChooseAddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA1F0E28741DC0009A762D /* ChooseAddressTableViewCell.swift */; };
 		E2CA1F1128741DC0009A762D /* ChooseAddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CA1F0F28741DC0009A762D /* ChooseAddressTableViewCell.xib */; };
 		E2CA1F1728741FC0009A762D /* PaymentOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA1F1628741FC0009A762D /* PaymentOptionsViewController.swift */; };
+		E2CA1F1D28742090009A762D /* FinishOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA1F1C28742090009A762D /* FinishOrderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		E2CA1F0E28741DC0009A762D /* ChooseAddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAddressTableViewCell.swift; sourceTree = "<group>"; };
 		E2CA1F0F28741DC0009A762D /* ChooseAddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseAddressTableViewCell.xib; sourceTree = "<group>"; };
 		E2CA1F1628741FC0009A762D /* PaymentOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptionsViewController.swift; sourceTree = "<group>"; };
+		E2CA1F1C28742090009A762D /* FinishOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishOrderViewController.swift; sourceTree = "<group>"; };
 		E894B9D28CBD8BB07198E01C /* Pods-Shopify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopify.release.xcconfig"; path = "Target Support Files/Pods-Shopify/Pods-Shopify.release.xcconfig"; sourceTree = "<group>"; };
 		F312E99D14FD0022440811C3 /* Pods_Shopify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shopify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -360,6 +362,7 @@
 		E2CA1EF928741687009A762D /* Shopping Cart  */ = {
 			isa = PBXGroup;
 			children = (
+				E2CA1F182874204A009A762D /* Finish Order */,
 				E2CA1F1228741F78009A762D /* Payment Options */,
 				E2CA1F0728741D21009A762D /* Choose Address */,
 				E2CA1EFA287416A6009A762D /* Shopping Cart */,
@@ -481,6 +484,38 @@
 			children = (
 			);
 			path = PaymentOptionsViewModel;
+			sourceTree = "<group>";
+		};
+		E2CA1F182874204A009A762D /* Finish Order */ = {
+			isa = PBXGroup;
+			children = (
+				E2CA1F1B2874206B009A762D /* FinishOrderViewModel */,
+				E2CA1F1A28742064009A762D /* Model */,
+				E2CA1F192874205E009A762D /* View */,
+			);
+			path = "Finish Order";
+			sourceTree = "<group>";
+		};
+		E2CA1F192874205E009A762D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2CA1F1C28742090009A762D /* FinishOrderViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2CA1F1A28742064009A762D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2CA1F1B2874206B009A762D /* FinishOrderViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FinishOrderViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -676,6 +711,7 @@
 				E2CA1F0C28741D7B009A762D /* ChooseAddressViewController.swift in Sources */,
 				A66D66B72873568900C5BDBE /* SceneDelegate.swift in Sources */,
 				E24EF3DC287387CB004DC17F /* Urls.swift in Sources */,
+				E2CA1F1D28742090009A762D /* FinishOrderViewController.swift in Sources */,
 				E24EF3D228738445004DC17F /* BrandCollectionViewCell.swift in Sources */,
 				E24EF3D02873834F004DC17F /* PersonalViewController.swift in Sources */,
 				E2CA1EFF2874170D009A762D /* ShoppingCartViewController.swift in Sources */,
