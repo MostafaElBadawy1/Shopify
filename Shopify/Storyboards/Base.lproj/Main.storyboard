@@ -89,7 +89,11 @@
                                 <items>
                                     <barButtonItem image="magnifyingglass" catalog="system" id="JsJ-Zu-NSH"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="r8d-Z8-Fso"/>
-                                    <barButtonItem image="cart.fill" catalog="system" id="pxD-n0-kON"/>
+                                    <barButtonItem image="cart.fill" catalog="system" id="pxD-n0-kON">
+                                        <connections>
+                                            <segue destination="dvA-94-SKw" kind="presentation" modalPresentationStyle="fullScreen" id="T5L-TL-zpd"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem image="heart.fill" catalog="system" id="Lxh-tq-XzZ"/>
                                 </items>
                             </toolbar>
@@ -159,6 +163,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jK-GT-Obk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-309" y="40"/>
+        </scene>
+        <!--shoppingcart-->
+        <scene sceneID="7pN-Mz-Ka3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ShoppingCart" referencedIdentifier="shoppingcart" id="dvA-94-SKw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dGf-4D-vLm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lLh-ak-c8u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-991" y="265"/>
         </scene>
     </scenes>
     <resources>

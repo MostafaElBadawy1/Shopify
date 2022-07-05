@@ -8,6 +8,7 @@
 import UIKit
 
 class FinishOrderViewController: UIViewController {
+    @IBOutlet weak var myView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,33 +26,22 @@ class FinishOrderViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func makeDesignToView () {
+        // corner radius
+        myView.layer.cornerRadius = 20
 
-}
-@IBOutlet weak var myView: UIView!
-
-
-override func viewDidLoad() {
-    super.viewDidLoad()
-  //  makeShadow()
-
-    makeDesignToView()
-    // Do any additional setup after loading the view.
-}
+        // border
+        myView.layer.borderWidth = 2.0
+        myView.layer.borderColor = UIColor.black.cgColor
 
 
-
-
-func makeDesignToView () {
-    // corner radius
-    myView.layer.cornerRadius = 20
-
-    // border
-    myView.layer.borderWidth = 2.0
-    myView.layer.borderColor = UIColor.black.cgColor
-
+    }
 
 }
 
 
-}
+
+
+
 

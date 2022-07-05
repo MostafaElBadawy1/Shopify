@@ -18,7 +18,6 @@ class ShoppingCartViewController: UIViewController {
         super.viewDidLoad()
 
         
-        
         myTableView.register(UINib(nibName: "ShoppingCartTableViewCell", bundle: nil), forCellReuseIdentifier: "shoppingcart")
         
         // Do any additional setup after loading the view.
@@ -33,10 +32,10 @@ class ShoppingCartViewController: UIViewController {
 
 
 
-extension shoppingCartViewController : UITableViewDelegate {}
+extension ShoppingCartViewController : UITableViewDelegate {}
 
 
-extension shoppingCartViewController : UITableViewDataSource {
+extension ShoppingCartViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
