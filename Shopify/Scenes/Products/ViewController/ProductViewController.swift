@@ -8,7 +8,7 @@
 import UIKit
 
 class ProductViewController: UIViewController {
-
+    var productID:Int?
     override func viewDidLoad() {
         super.viewDidLoad()
 
