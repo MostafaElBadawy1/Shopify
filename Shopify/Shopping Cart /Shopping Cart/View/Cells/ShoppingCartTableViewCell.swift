@@ -8,7 +8,12 @@
 import UIKit
 
 class ShoppingCartTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var brandImage: UIImageView!
+    @IBOutlet weak var brandName: UILabel!
+    @IBOutlet weak var brandCost: UILabel!
+    
+    @IBOutlet weak var numberOfBrand: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,6 +23,12 @@ class ShoppingCartTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    
+    @IBAction func decreaseOfBrand(_ sender: Any) {
+    }
+    @IBAction func increaseOfBrand(_ sender: Any) {
     }
     
 }
