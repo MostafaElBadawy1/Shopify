@@ -12,8 +12,8 @@ struct Products: Codable {
 
 // MARK: - Product
 struct Product: Codable {
-    let id: Int
-    let title, bodyHTML, vendor: String
+    let id: Int?
+    let title, bodyHTML, vendor: String?
     let productType: ProductType
     let createdAt: Date
     let handle: String

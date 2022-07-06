@@ -87,7 +87,13 @@
                                 <rect key="frame" x="0.0" y="42" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem image="magnifyingglass" catalog="system" id="JsJ-Zu-NSH"/>
+                                    <barButtonItem style="plain" id="91a-A0-jH0">
+                                        <searchBar key="customView" contentMode="redraw" id="r0c-tG-9Nb">
+                                            <rect key="frame" x="20" y="0.0" width="271" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </searchBar>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="r8d-Z8-Fso"/>
                                     <barButtonItem image="cart.fill" catalog="system" id="pxD-n0-kON">
                                         <connections>
@@ -106,6 +112,7 @@
                     <connections>
                         <outlet property="annnceImg" destination="0IS-79-UC0" id="yMe-J4-cui"/>
                         <outlet property="brandCollectionView" destination="FDC-SO-mx7" id="rlv-dv-gzT"/>
+                        <outlet property="brandsSearchBar" destination="r0c-tG-9Nb" id="pnB-xJ-w3G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -138,8 +145,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="198" height="234"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrO-vD-zhE">
-                                                    <rect key="frame" x="29" y="176" width="150" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrO-vD-zhE">
+                                                    <rect key="frame" x="29" y="176" width="150" height="37"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="0Mk-QA-AgC"/>
                                                         <constraint firstAttribute="height" constant="21" id="pCe-kT-U2f"/>
@@ -253,7 +260,6 @@
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">

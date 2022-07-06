@@ -9,24 +9,13 @@ import UIKit
 //import SDWebImage
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var brandsSearchBar: UISearchBar!
     @IBOutlet weak var brandCollectionView: UICollectionView!
     var brandArr:[SmartCollection] = []
     @IBOutlet weak var annnceImg: UIImageView!
     let images = [UIImage(named: "vv"), UIImage(named: "aa"), UIImage(named: "bb")].compactMap{$0}
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print("Hello world")
-        print("ahmed")
-        print("mahmoud")
-        print("khalifa")
-        print("hii")
-        annnceImg.animationImages = images
-        annnceImg.animationDuration = 4
-        annnceImg.startAnimating()
-        brandCollectionView.dataSource = self
-        brandCollectionView.delegate = self
-        //fetchData
+    func fetchData(){
         let homeViewModel = HomeViewModel()
         homeViewModel.fetchData()
         homeViewModel.bindingData = {brands , error in
@@ -42,6 +31,18 @@ class ViewController: UIViewController {
             }
             
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        fetchData()
+        annnceImg.animationImages = images
+        annnceImg.animationDuration = 4
+        annnceImg.startAnimating()
+        brandCollectionView.dataSource = self
+        brandCollectionView.delegate = self
+        //fetchData
+        
         
         // Do any additional setup after loading the view.
     }

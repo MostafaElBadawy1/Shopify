@@ -11,31 +11,37 @@ class ProductViewController: UIViewController {
     var productID:Int?
     var arrayOfProduct:[Product] = []
     @IBOutlet weak var productCollectionV: UICollectionView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print("hello")
-        //productCollectionV.dataSource = self
-        //productCollectionV.delegate = self
+    func fetchData(){
         let productViewModel1 = ProductViewModel()
         productViewModel1.fetchData(endPoint: "\(productID)")
         productViewModel1.bindingData = {product,error in
             if let products = product{
                 self.arrayOfProduct = products
-          //      print("tmaam")
+             print("tmaam")
+                print(self.arrayOfProduct)
                 DispatchQueue.main.async {
                     self.productCollectionV.reloadData()
                     
             }
                   }
+            if let error = error{
+            
+            print("noData")
             
             
-            
-            
-            
+            }
             
             
         }
+        
+        
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        fetchData()
+        print("hello")
+        //productCollectionV.dataSource = self
+        //productCollectionV.delegate = self
         
         // Do any additional setup after loading the view.
     }
