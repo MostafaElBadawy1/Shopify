@@ -11,7 +11,7 @@ class PersonalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+print("welcome in personalView")
         // Do any additional setup after loading the view.
     }
     
