@@ -8,4 +8,6 @@
 import Foundation
 protocol ApiService {
     func fetchbranchs(endPoint : String , Completion : @escaping (([SmartCollection]? , Error?) -> Void))
+    
+    func fetchProduct(endPoint : String , Completion : @escaping (([Product]? , Error?) -> Void))
 }
