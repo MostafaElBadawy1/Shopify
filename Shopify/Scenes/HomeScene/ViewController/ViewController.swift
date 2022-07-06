@@ -17,10 +17,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Hello world")
+        print("Hello world")
         print("ahmed")
         print("mahmoud")
         print("khalifa")
-        print("hii")
+        print("SHIHA")
         annnceImg.animationImages = images
         annnceImg.animationDuration = 4
         annnceImg.startAnimating()
