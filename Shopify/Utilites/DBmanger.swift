@@ -45,6 +45,8 @@ extension DBmanger {
         }
         catch{
             print("error in saving item in cart ")
+            print("test")
+
             print(error.localizedDescription)
         }
     }
