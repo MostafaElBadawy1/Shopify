@@ -87,7 +87,13 @@
                                 <rect key="frame" x="0.0" y="42" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem image="magnifyingglass" catalog="system" id="JsJ-Zu-NSH"/>
+                                    <barButtonItem style="plain" id="D29-EM-Siv">
+                                        <searchBar key="customView" contentMode="redraw" placeholder="Search For Brands " id="Mbn-uY-Bfs">
+                                            <rect key="frame" x="20" y="0.0" width="271" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </searchBar>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="r8d-Z8-Fso"/>
                                     <barButtonItem image="cart.fill" catalog="system" id="pxD-n0-kON">
                                         <connections>
@@ -106,6 +112,7 @@
                     <connections>
                         <outlet property="annnceImg" destination="0IS-79-UC0" id="yMe-J4-cui"/>
                         <outlet property="brandCollectionView" destination="FDC-SO-mx7" id="rlv-dv-gzT"/>
+                        <outlet property="brandsSearchBar" destination="Mbn-uY-Bfs" id="B3y-dV-gDy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -179,7 +186,6 @@
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
