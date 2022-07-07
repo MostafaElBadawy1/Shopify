@@ -8,8 +8,8 @@
 import UIKit
 
 class ChooseAddressTableViewCell: UITableViewCell {
-    @IBOutlet weak var circleNotFill: UIButton!
     @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var citylbl: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +22,5 @@ class ChooseAddressTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBAction func ChooseAddress(_ sender: Any) {
-    }
+   
 }
