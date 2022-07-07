@@ -26,7 +26,7 @@ init(apiService: ApiService = NetworkManger()) {
 
 
 
-    func fetchData(endPoint:String) {
+    func fetchProduct(endPoint:String) {
     apiService.fetchProduct(endPoint:endPoint ) { products, error in
         if let products = products {
             self.productArray = products

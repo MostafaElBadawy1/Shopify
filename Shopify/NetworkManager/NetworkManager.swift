@@ -7,14 +7,14 @@
 
 import Foundation
 class NetworkManger : ApiService {
-    func fetchProduct(endPoint: String, Completion: @escaping (([Product]?, Error?) -> Void)) {
+    func fetchProduct(endPoint: String, Completion: @escaping ((Product?, Error?) -> Void)) {
         var arrayOfProducts = [Product]()
         if let url1 = URL(string: UrlService(endPoint: endPoint).urlProduct){
             
             URLSession.shared.dataTask(with: url1) { data, response, error in
                 if let insideData = data{
                     let decodedArray :Products? = convertFromJson(data: insideData)
-                    arrayOfProducts = decodedArray?.products ?? []
+                    arrayOfProducts = decodedArray?.products 
                     print("decodedArray\(arrayOfProducts)")
                     Completion(arrayOfProducts , nil)
                     

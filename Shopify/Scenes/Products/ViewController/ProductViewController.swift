@@ -18,11 +18,14 @@ class ProductViewController: UIViewController {
         //productCollectionV.dataSource = self
         //productCollectionV.delegate = self
         let productViewModel1 = ProductViewModel()
-        productViewModel1.fetchData(endPoint: "\(productID)")
+        productViewModel1.fetchProduct(endPoint: "products.json?collection_id=\(productID)")
+      
         productViewModel1.bindingData = {product,error in
             if let products = product{
                 self.arrayOfProduct = products
           //      print("tmaam")
+                print(self.arrayOfProduct)
+               // print("\(productViewModel1.fetchData(endPoint: "\(self.productID)"))")
                 DispatchQueue.main.async {
                     self.productCollectionV.reloadData()
                     

@@ -7,9 +7,14 @@
 
 import Foundation
 
-func convertFromJson<T: Codable>(data : Data) -> T? {
-    print("decode data")
+//func convertFromJson<T: Codable>(data : Data) -> T? {
+//    print("decode data")
+//    let jsonDecoder = JSONDecoder()
+//    let decodeArray = try? jsonDecoder.decode(T.self, from: data)
+//    return decodeArray
+//}
+func convertFromJson<T: Codable>(data: Data) -> T? {
     let jsonDecoder = JSONDecoder()
-    let decodeArray = try? jsonDecoder.decode(T.self, from: data)
-    return decodeArray
+    let decodedArray = try? jsonDecoder.decode(T.self, from: data)
+    return decodedArray
 }
