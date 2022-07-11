@@ -102,6 +102,8 @@
                 <outlet property="brandCost" destination="OUc-Oj-6C0" id="aAN-TT-Otb"/>
                 <outlet property="brandImage" destination="Bug-7u-Ty3" id="jnx-14-gRd"/>
                 <outlet property="brandName" destination="Oyc-85-g7M" id="bRd-4g-Q2g"/>
+                <outlet property="decreaseOut" destination="boc-ow-P2d" id="LIX-hq-S2v"/>
+                <outlet property="increaseOut" destination="7u6-d4-DcD" id="ltN-3R-0xS"/>
                 <outlet property="numberOfBrand" destination="LR1-sv-XnY" id="buf-iJ-Lng"/>
             </connections>
             <point key="canvasLocation" x="221.73913043478262" y="160.04464285714286"/>

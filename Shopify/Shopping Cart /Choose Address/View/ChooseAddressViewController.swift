@@ -14,15 +14,28 @@ class ChooseAddressViewController: UIViewController {
     
     var customerID:Int!
     var cart = [CartItem]()
-    
+
+    var totalCost : Double = 0.0
+    var addressChoosed : String = ""
+
     var selectedIndex : IndexPath = []
     
     var addresses = [Address]()
-    var addressChoosed : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+     
+
+        fetchDataOfAddressesFromViewModel()
+        myTableView.register(UINib(nibName: "ChooseAddressTableViewCell", bundle: nil), forCellReuseIdentifier: "chooseaddress")
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    // MARK: - Func Fetch DAta OF Address
+    func fetchDataOfAddressesFromViewModel(){
+ merge
         let homeViewModel = HomeViewModelAddress( customerid: customerID)
         homeViewModel.fetchData()
         homeViewModel.bindingData = {branchs , error in
@@ -42,25 +55,41 @@ class ChooseAddressViewController: UIViewController {
         }
 
         
-
-        myTableView.register(UINib(nibName: "ChooseAddressTableViewCell", bundle: nil), forCellReuseIdentifier: "chooseaddress")
-        
-        // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func dismissViewWhenClickX(_ sender: Any) {
+ merge
+        
+        self.dismiss(animated: true)
+       // navigationController?.popViewController(animated: true)
+    }
+    
+    // MARK: - Btn Continue to Paymnet
 
     @IBAction func continueTopayment(_ sender: Any) {
         
+
+        let vc = storyboard?.instantiateViewController(withIdentifier: "paymentOptions") as! PaymentOptionsViewController
         
+        vc.totalCost = totalCost
+        vc.customerID = customerID
+        vc.address = addressChoosed
         
+        for item in cart {
+            vc.TotalCart.append(item)
+        }
         
-        
-        
+       // vc.modalPresentationStyle = .fullScreen
+       // navigationController?.pushViewController(vc, animated: true)
+        present(vc, animated: true, completion: nil)
+ merge
+    
         
     }
-    
-
 }
+
+// MARK: - table View Delegate
 
 extension ChooseAddressViewController : UITableViewDelegate {
 
@@ -70,15 +99,9 @@ extension ChooseAddressViewController : UITableViewDelegate {
         print(addressChoosed)
 
         tableView.deselectRow(at: indexPath, animated: true)
-        /*
-        if  tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
-            tableView.cellForRow(at: indexPath)?.accessoryType = .none
-        }
-        else {
-            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
-        }
-        */
 
+    
+ merge
         for row in 0..<tableView.numberOfRows(inSection: indexPath.section) {
             if let cell = tableView.cellForRow(at: IndexPath(row: row, section: indexPath.section)) {
                 cell.accessoryType = row == indexPath.row ? .checkmark : .none
@@ -88,9 +111,7 @@ extension ChooseAddressViewController : UITableViewDelegate {
     
 }
 
-
-
-
+// MARK: - table View Data Source
 
 extension ChooseAddressViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -99,22 +120,21 @@ extension ChooseAddressViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "chooseaddress", for: indexPath) as! ChooseAddressTableViewCell
-        
+
+ merge
         
         cell.address.text = addresses[indexPath.row].address1
         cell.citylbl.text = addresses[indexPath.row].city
         
-    
-        
+
+ merge
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
-    
-    
- 
-    
-    
+
+
+ merge
 }

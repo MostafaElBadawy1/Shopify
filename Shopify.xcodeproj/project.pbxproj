@@ -49,6 +49,15 @@
 		E2668A8E2876D0B6000E7368 /* ApiServiceChooseAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2668A8D2876D0B6000E7368 /* ApiServiceChooseAddress.swift */; };
 		E2668A902876D14E000E7368 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2668A8F2876D14E000E7368 /* Address.swift */; };
 		E2668A922876D182000E7368 /* ChooseAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2668A912876D182000E7368 /* ChooseAddressViewModel.swift */; };
+ mostafa
+=======
+		E2AEF86D2878A8E600215DA7 /* DiscountCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AEF86C2878A8E600215DA7 /* DiscountCode.swift */; };
+		E2AEF8722878A93D00215DA7 /* UrlsFinish.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AEF8712878A93D00215DA7 /* UrlsFinish.swift */; };
+		E2AEF8742878AA1500215DA7 /* ApiServiceDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AEF8732878AA1500215DA7 /* ApiServiceDiscount.swift */; };
+		E2AEF8762878AA2500215DA7 /* NetworkMangerDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AEF8752878AA2500215DA7 /* NetworkMangerDiscount.swift */; };
+		E2AEF8782878AA3C00215DA7 /* FinishOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AEF8772878AA3C00215DA7 /* FinishOrderViewModel.swift */; };
+		E2AFF5B028772E78001B526A /* PaymentOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFF5AF28772E78001B526A /* PaymentOptionsTableViewCell.swift */; };
+ merge
 		E2CA1EFF2874170D009A762D /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA1EFE2874170D009A762D /* ShoppingCartViewController.swift */; };
 		E2CA1F0328741752009A762D /* ShoppingCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA1F0128741752009A762D /* ShoppingCartTableViewCell.swift */; };
 		E2CA1F0428741752009A762D /* ShoppingCartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CA1F0228741752009A762D /* ShoppingCartTableViewCell.xib */; };
@@ -130,6 +139,15 @@
 		E2668A8D2876D0B6000E7368 /* ApiServiceChooseAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceChooseAddress.swift; sourceTree = "<group>"; };
 		E2668A8F2876D14E000E7368 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		E2668A912876D182000E7368 /* ChooseAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAddressViewModel.swift; sourceTree = "<group>"; };
+ mostafa
+=======
+		E2AEF86C2878A8E600215DA7 /* DiscountCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountCode.swift; sourceTree = "<group>"; };
+		E2AEF8712878A93D00215DA7 /* UrlsFinish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlsFinish.swift; sourceTree = "<group>"; };
+		E2AEF8732878AA1500215DA7 /* ApiServiceDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceDiscount.swift; sourceTree = "<group>"; };
+		E2AEF8752878AA2500215DA7 /* NetworkMangerDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMangerDiscount.swift; sourceTree = "<group>"; };
+		E2AEF8772878AA3C00215DA7 /* FinishOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishOrderViewModel.swift; sourceTree = "<group>"; };
+		E2AFF5AF28772E78001B526A /* PaymentOptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptionsTableViewCell.swift; sourceTree = "<group>"; };
+ merge
 		E2CA1EFE2874170D009A762D /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		E2CA1F0128741752009A762D /* ShoppingCartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartTableViewCell.swift; sourceTree = "<group>"; };
 		E2CA1F0228741752009A762D /* ShoppingCartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartTableViewCell.xib; sourceTree = "<group>"; };
@@ -519,6 +537,40 @@
 			path = networkManger;
 			sourceTree = "<group>";
 		};
+
+		E2AEF86E2878A90100215DA7 /* Network Manger */ = {
+			isa = PBXGroup;
+			children = (
+				E2AEF8752878AA2500215DA7 /* NetworkMangerDiscount.swift */,
+			);
+			path = "Network Manger";
+			sourceTree = "<group>";
+		};
+		E2AEF86F2878A90D00215DA7 /* Api Services */ = {
+			isa = PBXGroup;
+			children = (
+				E2AEF8732878AA1500215DA7 /* ApiServiceDiscount.swift */,
+			);
+			path = "Api Services";
+			sourceTree = "<group>";
+		};
+		E2AEF8702878A91E00215DA7 /* urlsOfFinish */ = {
+			isa = PBXGroup;
+			children = (
+				E2AEF8712878A93D00215DA7 /* UrlsFinish.swift */,
+			);
+			path = urlsOfFinish;
+			sourceTree = "<group>";
+		};
+		E2AFF5AE28772E57001B526A /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E2AFF5AF28772E78001B526A /* PaymentOptionsTableViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+ merge
 		E2CA1EF928741687009A762D /* Shopping Cart  */ = {
 			isa = PBXGroup;
 			children = (
@@ -633,6 +685,7 @@
 		E2CA1F1328741F8D009A762D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E2AFF5AE28772E57001B526A /* cell */,
 				E2CA1F1628741FC0009A762D /* PaymentOptionsViewController.swift */,
 			);
 			path = View;
@@ -655,6 +708,9 @@
 		E2CA1F182874204A009A762D /* Finish Order */ = {
 			isa = PBXGroup;
 			children = (
+				E2AEF8702878A91E00215DA7 /* urlsOfFinish */,
+				E2AEF86F2878A90D00215DA7 /* Api Services */,
+				E2AEF86E2878A90100215DA7 /* Network Manger */,
 				E2CA1F1B2874206B009A762D /* FinishOrderViewModel */,
 				E2CA1F1A28742064009A762D /* Model */,
 				E2CA1F192874205E009A762D /* View */,
@@ -673,6 +729,7 @@
 		E2CA1F1A28742064009A762D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E2AEF86C2878A8E600215DA7 /* DiscountCode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -680,6 +737,7 @@
 		E2CA1F1B2874206B009A762D /* FinishOrderViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E2AEF8772878AA3C00215DA7 /* FinishOrderViewModel.swift */,
 			);
 			path = FinishOrderViewModel;
 			sourceTree = "<group>";
@@ -936,14 +994,27 @@
 				A6A3836C2874B12D000FCF94 /* AuthenticationViewModel.swift in Sources */,
 				A66D66B92873568900C5BDBE /* ViewController.swift in Sources */,
 				E24EF3D52873875C004DC17F /* Brands.swift in Sources */,
+ mostafa
 				A630029628771F9C00F5AA7E /* Helper.swift in Sources */,
+=======
+				E2AEF8742878AA1500215DA7 /* ApiServiceDiscount.swift in Sources */,
+ merge
 				A6A3836A2874B11F000FCF94 /* RegisterViewController.swift in Sources */,
 				E2CA1F1728741FC0009A762D /* PaymentOptionsViewController.swift in Sources */,
+				E2AEF8782878AA3C00215DA7 /* FinishOrderViewModel.swift in Sources */,
 				A66D66B52873568900C5BDBE /* AppDelegate.swift in Sources */,
+ mostafa
 				A630029A28785E6100F5AA7E /* Encoding+Extention.swift in Sources */,
 				E24EF3E0287387EE004DC17F /* NetworkManager.swift in Sources */,
 				A66D66BF2873568900C5BDBE /* Shopify.xcdatamodeld in Sources */,
 				E2668A8E2876D0B6000E7368 /* ApiServiceChooseAddress.swift in Sources */,
+=======
+				E2AEF8722878A93D00215DA7 /* UrlsFinish.swift in Sources */,
+				E24EF3E0287387EE004DC17F /* NetworkManager.swift in Sources */,
+				A66D66BF2873568900C5BDBE /* Shopify.xcdatamodeld in Sources */,
+				E2668A8E2876D0B6000E7368 /* ApiServiceChooseAddress.swift in Sources */,
+				E2AEF8762878AA2500215DA7 /* NetworkMangerDiscount.swift in Sources */,
+merge
 				A66D66F528736AD200C5BDBE /* HomeViewModel.swift in Sources */,
 				E234B0C72874CC4300ABA378 /* testViewController.swift in Sources */,
 				E24EF3CE28738314004DC17F /* CategoryViewController.swift in Sources */,
@@ -961,6 +1032,8 @@
 				E2CA1F1D28742090009A762D /* FinishOrderViewController.swift in Sources */,
 				E2668A902876D14E000E7368 /* Address.swift in Sources */,
 				E24EF3D228738445004DC17F /* BrandCollectionViewCell.swift in Sources */,
+				E2AFF5B028772E78001B526A /* PaymentOptionsTableViewCell.swift in Sources */,
+				E2AEF86D2878A8E600215DA7 /* DiscountCode.swift in Sources */,
 				E24EF3D02873834F004DC17F /* PersonalViewController.swift in Sources */,
 				E2CA1EFF2874170D009A762D /* ShoppingCartViewController.swift in Sources */,
 				E2CA1F1028741DC0009A762D /* ChooseAddressTableViewCell.swift in Sources */,

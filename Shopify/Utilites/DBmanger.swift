@@ -30,6 +30,7 @@ extension DBmanger {
         
         let cartItem = NSManagedObject(entity: entity!, insertInto: managedContext)
         
+        cartItem.setValue(CartItem.numOfItem, forKey: "numOfItem")
         cartItem.setValue(CartItem.productId, forKey: "productId")
         cartItem.setValue(CartItem.productImg, forKey: "productImg")
         cartItem.setValue(CartItem.productTitle, forKey: "productTitle")
@@ -47,13 +48,14 @@ extension DBmanger {
         }
     }
     
-    func addCartItem(appDelegate : AppDelegate , productId : Int32 , productImg : String , productTitle : String , productType : String , productPrice : Double ) {
+    func addCartItem(appDelegate : AppDelegate , productId : Int32 , productImg : String , productTitle : String , productType : String , productPrice : Double , numofitem:Int16 ) {
         let managedContext = appDelegate.persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "CartItem", in: managedContext)
         
         let cartItem = NSManagedObject(entity: entity!, insertInto: managedContext)
         
         cartItem.setValue(productId, forKey: "productId")
+        cartItem.setValue(numofitem, forKey: "numOfItem")
         cartItem.setValue(productImg, forKey: "productImg")
         cartItem.setValue(productTitle, forKey: "productTitle")
         cartItem.setValue(productType, forKey: "productType")
