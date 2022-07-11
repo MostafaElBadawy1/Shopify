@@ -10,6 +10,11 @@
 		3B8CDC86D9012BB911EE03DE /* Pods_Shopify_ShopifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1675D6C52ACBC37D504C3AE /* Pods_Shopify_ShopifyUITests.framework */; };
 		468B84DDECCBD97F9D083D80 /* Pods_ShopifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A934409DB2596472BD6CE8 /* Pods_ShopifyTests.framework */; };
 		71EBF183346D96383C511FE4 /* Pods_Shopify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3905156EAC33BF712C1AF146 /* Pods_Shopify.framework */; };
+		A630029628771F9C00F5AA7E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A630029528771F9C00F5AA7E /* Helper.swift */; };
+		A63002982878580400F5AA7E /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63002972878580400F5AA7E /* Customer.swift */; };
+		A630029A28785E6100F5AA7E /* Encoding+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A630029928785E6100F5AA7E /* Encoding+Extention.swift */; };
+		A630029E287885B500F5AA7E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A630029D287885B500F5AA7E /* TabBarViewController.swift */; };
+		A63002A02878866700F5AA7E /* UIViewController+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A630029F2878866700F5AA7E /* UIViewController+Extention.swift */; };
 		A654CA6928739693008456FC /* ProductDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A654CA6828739693008456FC /* ProductDetails.storyboard */; };
 		A654CA6E2873974B008456FC /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A654CA6D2873974B008456FC /* ProductDetailsViewController.swift */; };
 		A66D66B52873568900C5BDBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66D66B42873568900C5BDBE /* AppDelegate.swift */; };
@@ -26,7 +31,7 @@
 		A6A383622874AE84000FCF94 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A383612874AE84000FCF94 /* LoginViewController.swift */; };
 		A6A383652874B0BD000FCF94 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A383642874B0BD000FCF94 /* LoginViewModel.swift */; };
 		A6A3836A2874B11F000FCF94 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A383692874B11F000FCF94 /* RegisterViewController.swift */; };
-		A6A3836C2874B12D000FCF94 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A3836B2874B12D000FCF94 /* RegisterViewModel.swift */; };
+		A6A3836C2874B12D000FCF94 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A3836B2874B12D000FCF94 /* AuthenticationViewModel.swift */; };
 		A6A3836E2874B145000FCF94 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A3836D2874B145000FCF94 /* Register.storyboard */; };
 		A6A383702874B155000FCF94 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A3836F2874B155000FCF94 /* Login.storyboard */; };
 		E234B0C52874915900ABA378 /* DBmanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E234B0C42874915900ABA378 /* DBmanger.swift */; };
@@ -80,6 +85,11 @@
 		489D438B772C8CAE2C5BC5F6 /* Pods-Shopify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopify.release.xcconfig"; path = "Target Support Files/Pods-Shopify/Pods-Shopify.release.xcconfig"; sourceTree = "<group>"; };
 		5F7C7B086CCF4E54E61B69DB /* Pods-Shopify-ShopifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopify-ShopifyUITests.release.xcconfig"; path = "Target Support Files/Pods-Shopify-ShopifyUITests/Pods-Shopify-ShopifyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A22C890FD8D07F6B416EF60D /* Pods-Shopify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopify.debug.xcconfig"; path = "Target Support Files/Pods-Shopify/Pods-Shopify.debug.xcconfig"; sourceTree = "<group>"; };
+		A630029528771F9C00F5AA7E /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		A63002972878580400F5AA7E /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		A630029928785E6100F5AA7E /* Encoding+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encoding+Extention.swift"; sourceTree = "<group>"; };
+		A630029D287885B500F5AA7E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		A630029F2878866700F5AA7E /* UIViewController+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extention.swift"; sourceTree = "<group>"; };
 		A654CA6828739693008456FC /* ProductDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductDetails.storyboard; sourceTree = "<group>"; };
 		A654CA6D2873974B008456FC /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		A66D66B12873568900C5BDBE /* Shopify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,7 +110,7 @@
 		A6A383612874AE84000FCF94 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A6A383642874B0BD000FCF94 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		A6A383692874B11F000FCF94 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		A6A3836B2874B12D000FCF94 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		A6A3836B2874B12D000FCF94 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		A6A3836D2874B145000FCF94 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		A6A3836F2874B155000FCF94 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B1675D6C52ACBC37D504C3AE /* Pods_Shopify_ShopifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shopify_ShopifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,7 +179,6 @@
 				16B770FF184076977A596985 /* Pods-ShopifyTests.debug.xcconfig */,
 				C652E72A89B28E1D14D40AE6 /* Pods-ShopifyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -181,6 +190,32 @@
 				33A934409DB2596472BD6CE8 /* Pods_ShopifyTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A630029428771F8B00F5AA7E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A630029528771F9C00F5AA7E /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A630029C2878831000F5AA7E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A6A383662874B0E8000FCF94 /* RegisterScene */,
+				A6A3835F2874AE68000FCF94 /* LogineScene */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A63002A1287888DF00F5AA7E /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				A630029928785E6100F5AA7E /* Encoding+Extention.swift */,
+				A630029F2878866700F5AA7E /* UIViewController+Extention.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		A654CA6A287396F8008456FC /* ProductDetailsScene */ = {
@@ -232,6 +267,8 @@
 		A66D66B32873568900C5BDBE /* Shopify */ = {
 			isa = PBXGroup;
 			children = (
+				A63002A1287888DF00F5AA7E /* Extentions */,
+				A630029428771F8B00F5AA7E /* Helper */,
 				E234B0C32874913F00ABA378 /* Utilites */,
 				E2CA1EF928741687009A762D /* Shopping Cart  */,
 				A66D66E72873597000C5BDBE /* AppDelegate */,
@@ -288,8 +325,7 @@
 		A66D66F028736A3A00C5BDBE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				A6A383662874B0E8000FCF94 /* RegisterScene */,
-				A6A3835F2874AE68000FCF94 /* LogineScene */,
+				A630029C2878831000F5AA7E /* Authentication */,
 				E24EF3E12873904C004DC17F /* CategoryScene */,
 				E24EF3E228739069004DC17F /* PersonalScene */,
 				A66D66F128736A4500C5BDBE /* HomeScene */,
@@ -362,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				A6A383692874B11F000FCF94 /* RegisterViewController.swift */,
+				A630029D287885B500F5AA7E /* TabBarViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -369,7 +406,7 @@
 		A6A383682874B0FF000FCF94 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A6A3836B2874B12D000FCF94 /* RegisterViewModel.swift */,
+				A6A3836B2874B12D000FCF94 /* AuthenticationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -395,6 +432,7 @@
 			isa = PBXGroup;
 			children = (
 				E24EF3D42873875C004DC17F /* Brands.swift */,
+				A63002972878580400F5AA7E /* Customer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -895,19 +933,24 @@
 				E2668A922876D182000E7368 /* ChooseAddressViewModel.swift in Sources */,
 				E2668A8A2876CD66000E7368 /* urls.swift in Sources */,
 				A6A383652874B0BD000FCF94 /* LoginViewModel.swift in Sources */,
-				A6A3836C2874B12D000FCF94 /* RegisterViewModel.swift in Sources */,
+				A6A3836C2874B12D000FCF94 /* AuthenticationViewModel.swift in Sources */,
 				A66D66B92873568900C5BDBE /* ViewController.swift in Sources */,
 				E24EF3D52873875C004DC17F /* Brands.swift in Sources */,
+				A630029628771F9C00F5AA7E /* Helper.swift in Sources */,
 				A6A3836A2874B11F000FCF94 /* RegisterViewController.swift in Sources */,
 				E2CA1F1728741FC0009A762D /* PaymentOptionsViewController.swift in Sources */,
 				A66D66B52873568900C5BDBE /* AppDelegate.swift in Sources */,
+				A630029A28785E6100F5AA7E /* Encoding+Extention.swift in Sources */,
 				E24EF3E0287387EE004DC17F /* NetworkManager.swift in Sources */,
 				A66D66BF2873568900C5BDBE /* Shopify.xcdatamodeld in Sources */,
 				E2668A8E2876D0B6000E7368 /* ApiServiceChooseAddress.swift in Sources */,
 				A66D66F528736AD200C5BDBE /* HomeViewModel.swift in Sources */,
 				E234B0C72874CC4300ABA378 /* testViewController.swift in Sources */,
 				E24EF3CE28738314004DC17F /* CategoryViewController.swift in Sources */,
+				A63002A02878866700F5AA7E /* UIViewController+Extention.swift in Sources */,
+				A630029E287885B500F5AA7E /* TabBarViewController.swift in Sources */,
 				A654CA6E2873974B008456FC /* ProductDetailsViewController.swift in Sources */,
+				A63002982878580400F5AA7E /* Customer.swift in Sources */,
 				E24EF3DE287387DA004DC17F /* ApiServices.swift in Sources */,
 				A6A383622874AE84000FCF94 /* LoginViewController.swift in Sources */,
 				E24EF3DA287387C0004DC17F /* JsonDecoder.swift in Sources */,

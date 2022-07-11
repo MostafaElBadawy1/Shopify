@@ -8,4 +8,6 @@
 import Foundation
 protocol ApiService {
     func fetchbranchs(endPoint : String , Completion : @escaping (([SmartCollection]? , Error?) -> Void))
+    func getAllCustomers(endPoint: String, complition: @escaping (Customers?, Error?)->Void)
+    func registerCustomer(endPoint: String ,newCustomer:NewCustomer, completion:@escaping (Data?, URLResponse? , Error?)->())
 }

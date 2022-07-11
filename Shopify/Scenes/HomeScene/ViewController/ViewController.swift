@@ -10,24 +10,54 @@ import SDWebImage
 
 class ViewController: UIViewController {
     @IBOutlet weak var brandCollectionView: UICollectionView!
+    let images = [UIImage(named: "vv"), UIImage(named: "aa"), UIImage(named: "bb")].compactMap{$0}
     var brandArr:[SmartCollection] = []
     var filteredArray: [SmartCollection] = []
     @IBOutlet weak var annnceImg: UIImageView!
     @IBOutlet weak var brandsSearchBar: UISearchBar!
-    let images = [UIImage(named: "vv"), UIImage(named: "aa"), UIImage(named: "bb")].compactMap{$0}
+    
+    @IBAction func cartButton(_ sender: UIBarButtonItem) {
+        let check =   Helper.shared.getUserStatus()
+        if check == true{
+            let vc = storyboard?.instantiateViewController(withIdentifier: "CartsViewController") as? CartsViewController
+            self.navigationController?.pushViewController(vc!, animated: true)
+        }
+        else{
+            let vc = UIStoryboard(name: "Authentication", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    @IBAction func favoritButton(_ sender: Any) {
+        let check =   Helper.shared.getUserStatus()
+        if check == true{
+            // navegate to favorite VC
+        }
+        else{
+            let vc = UIStoryboard(name: "Authentication", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        annnceImg.animationImages = images
-        annnceImg.animationDuration = 4
-        annnceImg.startAnimating()
-        brandCollectionView.dataSource = self
-        brandCollectionView.delegate = self
-        brandsSearchBar.delegate = self
+        configreView ()
+        configCvAndSearch()
         fetchDataToHome()
       
         
-        // Do any additional setup after loading the view.
+    }
+    func configreView () {
+        annnceImg.animationImages = images
+        annnceImg.animationDuration = 4
+        annnceImg.startAnimating()
+        
+    }
+    func configCvAndSearch() {
+        brandCollectionView.dataSource = self
+        brandCollectionView.delegate = self
+        brandsSearchBar.delegate = self
     }
     func fetchDataToHome() {
         let homeViewModel = HomeViewModel()

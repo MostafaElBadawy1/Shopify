@@ -8,9 +8,6 @@
 import Foundation
 import CoreData
 
-
-
-
 protocol DeletionDelegate{
     func deleteMovieAtIndexPath(indexPath: IndexPath)
 }
