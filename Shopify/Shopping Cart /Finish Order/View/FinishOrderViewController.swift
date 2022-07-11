@@ -23,6 +23,12 @@ class FinishOrderViewController: UIViewController {
     var address : String = ""
     
     
+    var discounts : [PriceRule]?
+    var coupounsTxt : String = ""
+    var shipping : Double = 50.0
+    var total : Double = 0.0
+    var discount : Double = 0.0
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,17 +40,77 @@ class FinishOrderViewController: UIViewController {
             print(item)
         }
         
+        
+        
 
         // Do any additional setup after loading the view.
     }
     
+    
+    // MARK: - Func Fetch DAta OF Discount
+    func fetchDataOfDiscountFromViewModel(){
+        let homeViewModel = HomeViewModelFinishOrder(coupountxt: "price_rules.json")
+        homeViewModel.fetchData()
+        homeViewModel.bindingData = {branchs , error in
+    
+            if let branchs = branchs {
+                self.discounts = branchs
+                DispatchQueue.main.async { [self] in
+                    print("discounts")
+                    print(discounts!)
+                }
+            }
+            if let error = error {
+                print(error.localizedDescription)
+            }
+            
+        }
+        
+    }
+    
+    
+    // MARK: - Func will appear
+
+    override func viewWillAppear(_ animated: Bool) {
+        
+        discountLbl.text = "\( discount)"
+        subTotalLbl.text = "\(totalCost)"
+        shippingFeeslbl.text = "\(shipping)"
+        calculateTotal()
+        
+        
+        
+    }
+    
+    // MARK: - btn make order
+
+    
     @IBAction func makeorder(_ sender: Any) {
     }
+    
+    
+    
+    
+    // MARK: - btn Validate
+
     @IBAction func validateCoupon(_ sender: Any) {
+        
+        // fetch coupon
+        
+        coupounsTxt = DiscountTxtView.text!
+        fetchDataOfDiscountFromViewModel()
+        
+        if (coupounsTxt == "SUMMERSALE10OFF") {
+            discount = -10.0
+            discountLbl.text = "\(-1 * discount)"
+        }else {
+            discount = 0.0
+            discountLbl.text = "\(-1 * discount)"
+        }
+        calculateTotal()
     }
     
     
-    // MARK: - Navigation
 
     
     
@@ -57,9 +123,11 @@ class FinishOrderViewController: UIViewController {
         myView.layer.borderColor = UIColor.black.cgColor
     }
 
-    
+    // MARK: - Func Calculate total
+
     func calculateTotal () {
-      //  totalLbl.text = totalCost + 
+        total = totalCost + shipping + discount
+        totalLbl.text = "\(total)"
         
     }
     

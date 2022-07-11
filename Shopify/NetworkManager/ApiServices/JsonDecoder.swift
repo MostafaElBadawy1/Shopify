@@ -13,3 +13,5 @@ func convertFromJson<T: Codable>(data : Data) -> T? {
     let decodeArray = try? jsonDecoder.decode(T.self, from: data)
     return decodeArray
 }
+
+
