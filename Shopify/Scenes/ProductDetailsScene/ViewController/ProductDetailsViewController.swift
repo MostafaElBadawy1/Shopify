@@ -10,6 +10,16 @@ import UIKit
 class ProductDetailsViewController: UIViewController {
 
     @IBOutlet weak var productImagesCollectionView: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var productNameLbl: UILabel!
+    @IBOutlet weak var productPriceLbl: UILabel!
+    @IBOutlet weak var ratingImage: UIImageView!
+    @IBOutlet weak var discriptionLbl: UILabel!
+
+    @IBAction func addToCartBtn(_ sender: UIButton) {
+    }
+    @IBAction func addToFavoriteBtn(_ sender: UIButton) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

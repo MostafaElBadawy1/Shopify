@@ -1,16 +1,15 @@
 //
-//  ChooseAddressTableViewCell.swift
+//  PaymentOptionsTableViewCell.swift
 //  Shopify
 //
-//  Created by Macintosh on 05/07/2022.
+//  Created by Macintosh on 07/07/2022.
 //
 
 import UIKit
 
-class ChooseAddressTableViewCell: UITableViewCell {
-    @IBOutlet weak var address: UILabel!
-    @IBOutlet weak var citylbl: UILabel!
-    
+class PaymentOptionsTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var paymentOptionslbl: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,6 +20,5 @@ class ChooseAddressTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-   
+
 }
