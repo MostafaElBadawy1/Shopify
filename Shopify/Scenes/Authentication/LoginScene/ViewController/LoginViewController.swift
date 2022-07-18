@@ -11,6 +11,18 @@ class LoginViewController: UIViewController {
     // MARK: - Propreties
     var networkIndicator = UIActivityIndicatorView()
     var customes = [Customer]()
+    func styleOfBtn(){
+        loginButton.layer.cornerRadius = 20
+        loginButton.layer.borderWidth = 1
+        loginButton.layer.borderColor = UIColor.black.cgColor
+        loginButton.layer.shadowColor = UIColor.white.cgColor
+        loginButton.layer.shadowOpacity = 0.0
+            loginButton.layer.shadowColor = nil
+            loginButton.layer.shadowRadius = 0.0
+       
+        
+    }
+    
     // MARK: - IBOutlets
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
@@ -58,6 +70,7 @@ class LoginViewController: UIViewController {
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        styleOfBtn()
         getCustomers()
     }
     override func viewWillAppear(_ animated: Bool) {

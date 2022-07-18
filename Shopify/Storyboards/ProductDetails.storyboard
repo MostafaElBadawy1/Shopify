@@ -90,7 +90,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wX7-pW-Dlh">
-                                <rect key="frame" x="242" y="717" width="128" height="38"/>
+                                <rect key="frame" x="242" y="794" width="128" height="38"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="Yfm-dS-BTU"/>
                                     <constraint firstAttribute="width" constant="128" id="bbd-ht-Yy5"/>
@@ -99,33 +100,34 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Add To Cart"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Add To Cart">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <fontDescription key="titleFontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="addToCartBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Zbp-A7-7Uk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAG-EM-K4i">
-                                <rect key="frame" x="35" y="717" width="145" height="35.5"/>
+                                <rect key="frame" x="35" y="794" width="145" height="38"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="145" id="1aD-qt-jdz"/>
-                                    <constraint firstAttribute="height" constant="35.5" id="dqC-fN-QNb"/>
+                                    <constraint firstAttribute="height" constant="38" id="dqC-fN-QNb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Add to Favorite"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Add to Favorite">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                    <fontDescription key="titleFontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="addToFavoriteBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0il-F1-KAU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pq-eO-nFZ">
-                                <rect key="frame" x="23" y="531" width="371" height="146"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pq-eO-nFZ">
+                                <rect key="frame" x="23" y="531" width="371" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="371" id="KYt-9T-QOC"/>
-                                    <constraint firstAttribute="height" constant="146" id="YBh-z5-qKx"/>
+                                    <constraint firstAttribute="height" constant="100" id="YBh-z5-qKx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
@@ -151,25 +153,25 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XxC-ZI-4B5" secondAttribute="trailing" constant="20" id="IlZ-vy-XZa"/>
                             <constraint firstItem="q07-Dg-8x7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="43" id="IxH-o6-JSI"/>
                             <constraint firstItem="kA1-wU-FKo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="35" id="Nre-Ck-E0l"/>
-                            <constraint firstItem="nAG-EM-K4i" firstAttribute="top" secondItem="3pq-eO-nFZ" secondAttribute="bottom" constant="40" id="UHV-7U-6Iw"/>
                             <constraint firstItem="vor-75-ClU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="111" id="Zpr-Xe-l22"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3pq-eO-nFZ" secondAttribute="trailing" constant="20" id="cVE-bP-TNy"/>
                             <constraint firstItem="3pq-eO-nFZ" firstAttribute="top" secondItem="N8u-Ha-awi" secondAttribute="bottom" constant="10" id="gI8-jy-CSf"/>
                             <constraint firstItem="q07-Dg-8x7" firstAttribute="top" secondItem="kA1-wU-FKo" secondAttribute="bottom" constant="22" id="hPh-eX-Du7"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="wX7-pW-Dlh" secondAttribute="bottom" constant="107" id="hS0-jo-5Kn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="wX7-pW-Dlh" secondAttribute="bottom" constant="30" id="hS0-jo-5Kn"/>
                             <constraint firstItem="N8u-Ha-awi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="35" id="mKn-VA-tWJ"/>
                             <constraint firstItem="3pq-eO-nFZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="23" id="mWV-YI-TUP"/>
                             <constraint firstItem="nAG-EM-K4i" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="35" id="nBJ-FI-BrV"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wX7-pW-Dlh" secondAttribute="trailing" constant="44" id="nOx-EH-8rT"/>
                             <constraint firstItem="N8u-Ha-awi" firstAttribute="top" secondItem="q07-Dg-8x7" secondAttribute="bottom" constant="15" id="rbD-Wp-ZIN"/>
-                            <constraint firstItem="wX7-pW-Dlh" firstAttribute="top" secondItem="3pq-eO-nFZ" secondAttribute="bottom" constant="40" id="tZr-Gf-c6k"/>
                             <constraint firstItem="vor-75-ClU" firstAttribute="top" secondItem="XxC-ZI-4B5" secondAttribute="bottom" constant="10" id="uAc-A4-bD2"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="nAG-EM-K4i" secondAttribute="bottom" constant="109.5" id="uwk-yZ-kyb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="nAG-EM-K4i" secondAttribute="bottom" constant="30" id="uwk-yZ-kyb"/>
                             <constraint firstItem="kA1-wU-FKo" firstAttribute="top" secondItem="vor-75-ClU" secondAttribute="bottom" constant="9" id="zZD-h2-NB9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xNe-0P-tzH"/>
                     <connections>
+                        <outlet property="addToCardBtn" destination="wX7-pW-Dlh" id="MXD-Wm-Bwu"/>
+                        <outlet property="addToFavBtn" destination="nAG-EM-K4i" id="df2-Dg-hIT"/>
                         <outlet property="discriptionLbl" destination="3pq-eO-nFZ" id="vay-TU-9Nm"/>
                         <outlet property="pageControl" destination="vor-75-ClU" id="byn-ef-WXl"/>
                         <outlet property="productImagesCollectionView" destination="XxC-ZI-4B5" id="qhI-XB-9Pw"/>
@@ -179,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="824.63768115942037" y="68.973214285714278"/>
+            <point key="canvasLocation" x="884" y="-1278"/>
         </scene>
     </scenes>
     <resources>

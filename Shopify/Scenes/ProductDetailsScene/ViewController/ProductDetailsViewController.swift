@@ -18,6 +18,9 @@ class ProductDetailsViewController: UIViewController {
     var itemPrice : String = ""
     var imageURL : String = ""
     // MARK: - IBOutlets
+    
+    @IBOutlet weak var addToFavBtn: UIButton!
+    @IBOutlet weak var addToCardBtn: UIButton!
     @IBOutlet weak var productImagesCollectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var productNameLbl: UILabel!
@@ -26,6 +29,16 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var discriptionLbl: UILabel!
     // MARK: - @IBActions
     @IBAction func addToCartBtn(_ sender: UIButton) {
+        if addToCardBtn.backgroundColor == UIColor.lightGray {
+               addToCardBtn.backgroundColor = UIColor.blue
+            addToCardBtn.titleLabel?.textColor = UIColor.white
+
+           }
+           else if addToCardBtn.backgroundColor == UIColor.blue {
+               addToCardBtn.backgroundColor = UIColor.lightGray
+               addToCardBtn.titleLabel?.textColor = UIColor.white
+
+           }
         if passedDataToProductDetailsVC != nil {
             db.addCartItem(appDelegate: appDelegate, productId: Int64(passedDataToProductDetailsVC?.id ?? 0) , productImg: passedDataToProductDetailsVC?.image?.src ?? "" , productTitle: passedDataToProductDetailsVC?.title ?? "", productType: passedDataToProductDetailsVC?.product_type ?? "", productPrice: Double(itemPrice) ?? 0.0 , numofitem: 1)
         }else {
@@ -33,15 +46,53 @@ class ProductDetailsViewController: UIViewController {
         }
     }
     @IBAction func addToFavoriteBtn(_ sender: UIButton) {
+        if addToFavBtn.backgroundColor == UIColor.lightGray {
+               addToFavBtn.backgroundColor = UIColor.blue
+            addToFavBtn.titleLabel?.textColor = UIColor.white
+            
+
+           // addToFavBtn.titleColor(for: UIControl.State.normal)
+           // addToFavBtn.setTitleColor(UIColor.white, for: UIControl.State.normal)
+           }
+           else if addToFavBtn.backgroundColor == UIColor.blue {
+               addToFavBtn.backgroundColor = UIColor.lightGray
+               addToFavBtn.titleLabel?.textColor = UIColor.white
+
+              // addToFavBtn.setTitleColor(UIColor.white, for: UIControl.State.normal)
+           }
         if passedDataToProductDetailsVC != nil {
             db.addOrdertoFavourite(appDelegate: appDelegate, customerid: customerid!, price: Double(itemPrice) ?? 0.0, title: passedDataToProductDetailsVC?.title ?? "", image: passedDataToProductDetailsVC?.image?.src ?? "")
         }else {
             db.addOrdertoFavourite(appDelegate: appDelegate, customerid: customerid!, price: Double(itemPrice) ?? 0.0, title: passedDataToProductDetailsVC2?.title ?? "", image: passedDataToProductDetailsVC2?.image?.src ?? "")
         }
     }
+    // MARK: - Buttons Style
+
+    func styleOfBtn(){
+        addToFavBtn.layer.cornerRadius = 20
+        addToFavBtn.layer.borderWidth = 1
+        addToFavBtn.layer.borderColor = UIColor.black.cgColor
+        addToFavBtn.layer.shadowColor = UIColor.white.cgColor
+        addToFavBtn.layer.shadowOpacity = 0.0
+            addToFavBtn.layer.shadowColor = nil
+            addToFavBtn.layer.shadowRadius = 0.0
+        addToCardBtn.layer.shadowOpacity = 0.0
+            addToCardBtn.layer.shadowColor = nil
+            addToCardBtn.layer.shadowRadius = 0.0
+        addToCardBtn.layer.cornerRadius = 20
+        addToCardBtn.layer.borderWidth = 1
+        addToCardBtn.layer.borderColor = UIColor.black.cgColor
+        addToCardBtn.titleLabel?.textColor = UIColor.white
+        addToFavBtn.titleLabel?.textColor = UIColor.white
+        //addToCardBtn.backgroundColor = UIColor.lightGray
+       // addToFavBtn.backgroundColor = UIColor.lightGray
+      
+        
+    }
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        styleOfBtn()
         productImagesCollectionView.register(UINib(nibName: "ProductDetailsCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "ProductDetailsCollectionViewCell")
         productImagesCollectionView.delegate = self
         productImagesCollectionView.dataSource = self

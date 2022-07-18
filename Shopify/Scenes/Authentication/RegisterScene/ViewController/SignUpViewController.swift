@@ -8,6 +8,17 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
+    func styleOfBtn(){
+        signUpButton.layer.cornerRadius = 20
+        signUpButton.layer.borderWidth = 1
+        signUpButton.layer.borderColor = UIColor.black.cgColor
+        signUpButton.layer.shadowColor = UIColor.white.cgColor
+        signUpButton.layer.shadowOpacity = 0.0
+            signUpButton.layer.shadowColor = nil
+            signUpButton.layer.shadowRadius = 0.0
+       
+        
+    }
     // MARK: - Propreties
     var networkIndicator = UIActivityIndicatorView()
     var customes = [Customer]()
@@ -27,7 +38,7 @@ class SignUpViewController: UIViewController {
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        styleOfBtn()
     }
     // MARK: - Register
     func register(){

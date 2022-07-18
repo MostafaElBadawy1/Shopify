@@ -15,7 +15,7 @@ class NetworkMangerChooseAddress : ApiServiceChooseAddress {
                 if let insideData = data {
                     print(insideData)
                     let decodeArray : AddressesI? = convertFromJson(data: insideData)
-                    arrayOfBranchs = decodeArray!.addresses
+                    arrayOfBranchs = decodeArray?.addresses ?? []
                     print("decode array \(arrayOfBranchs)")
                     Completion(arrayOfBranchs , nil)
                 }
