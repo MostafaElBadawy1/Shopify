@@ -81,6 +81,8 @@
 		E258AA462881CBA300AC4A72 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E258AA452881CBA300AC4A72 /* SettingViewController.swift */; };
 		E258AA4B2881D24300AC4A72 /* AddressInMeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E258AA4A2881D24300AC4A72 /* AddressInMeTableViewCell.swift */; };
 		E26539CF2882334300B2631A /* AddNewAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26539CE2882334300B2631A /* AddNewAddressViewController.swift */; };
+		E26BC8212886021A000F4797 /* AddressNetworkMangerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BC8202886021A000F4797 /* AddressNetworkMangerMock.swift */; };
+		E26BC82328860223000F4797 /* NetworkAddressTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26BC82228860223000F4797 /* NetworkAddressTest.swift */; };
 		E2748BB92874F6E20001234B /* ProductCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2748BB82874F6E20001234B /* ProductCVCell.swift */; };
 		E298F41528771FE4002A3C47 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E298F41428771FE3002A3C47 /* Category.swift */; };
 		E2A838292885A753007E0052 /* OrderC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A838282885A753007E0052 /* OrderC.swift */; };
@@ -188,6 +190,8 @@
 		E258AA452881CBA300AC4A72 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		E258AA4A2881D24300AC4A72 /* AddressInMeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressInMeTableViewCell.swift; sourceTree = "<group>"; };
 		E26539CE2882334300B2631A /* AddNewAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAddressViewController.swift; sourceTree = "<group>"; };
+		E26BC8202886021A000F4797 /* AddressNetworkMangerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressNetworkMangerMock.swift; sourceTree = "<group>"; };
+		E26BC82228860223000F4797 /* NetworkAddressTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAddressTest.swift; sourceTree = "<group>"; };
 		E2748BB82874F6E20001234B /* ProductCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCVCell.swift; sourceTree = "<group>"; };
 		E298F41428771FE3002A3C47 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		E29AA168288412E3003BCD80 /* Almarai-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Bold.ttf"; sourceTree = "<group>"; };
@@ -284,7 +288,9 @@
 		A66D66CD2873568A00C5BDBE /* ShopifyTests */ = {
 			isa = PBXGroup;
 			children = (
+				E26BC81F2886021A000F4797 /* addresses Mock */,
 				A66D66CE2873568A00C5BDBE /* ShopifyTests.swift */,
+				E26BC82228860223000F4797 /* NetworkAddressTest.swift */,
 			);
 			path = ShopifyTests;
 			sourceTree = "<group>";
@@ -942,6 +948,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E26BC81F2886021A000F4797 /* addresses Mock */ = {
+			isa = PBXGroup;
+			children = (
+				E26BC8202886021A000F4797 /* AddressNetworkMangerMock.swift */,
+			);
+			path = "addresses Mock";
+			sourceTree = "<group>";
+		};
 		E2748BB72874F6A40001234B /* ProductCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1189,6 +1203,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A66D66CF2873568A00C5BDBE /* ShopifyTests.swift in Sources */,
+				E26BC8212886021A000F4797 /* AddressNetworkMangerMock.swift in Sources */,
+				E26BC82328860223000F4797 /* NetworkAddressTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
