@@ -40,9 +40,9 @@ class ProductDetailsViewController: UIViewController {
 
            }
         if passedDataToProductDetailsVC != nil {
-            db.addCartItem(appDelegate: appDelegate, productId: Int64(passedDataToProductDetailsVC?.id ?? 0) , productImg: passedDataToProductDetailsVC?.image?.src ?? "" , productTitle: passedDataToProductDetailsVC?.title ?? "", productType: passedDataToProductDetailsVC?.product_type ?? "", productPrice: Double(itemPrice) ?? 0.0 , numofitem: 1)
+            db.addCartItem(appDelegate: appDelegate, productId: Int64(passedDataToProductDetailsVC?.id ?? 99999999999) , productImg: passedDataToProductDetailsVC?.image?.src ?? "" , productTitle: passedDataToProductDetailsVC?.title ?? "", productType: passedDataToProductDetailsVC?.product_type ?? "", productPrice: Double(itemPrice) ?? 0.0 , numofitem: 1)
         }else {
-            db.addCartItem(appDelegate: appDelegate, productId: Int64(passedDataToProductDetailsVC2?.id ?? 0) , productImg: passedDataToProductDetailsVC2?.image?.src ?? "" , productTitle: passedDataToProductDetailsVC2?.title ?? "", productType: passedDataToProductDetailsVC2?.product_type ?? "", productPrice: Double((passedDataToProductDetailsVC2?.variants![0].price)! ) ?? 0.0 , numofitem: 1)
+            db.addCartItem(appDelegate: appDelegate, productId: Int64(passedDataToProductDetailsVC2?.id ?? 99999999999) , productImg: passedDataToProductDetailsVC2?.image?.src ?? "" , productTitle: passedDataToProductDetailsVC2?.title ?? "", productType: passedDataToProductDetailsVC2?.product_type ?? "", productPrice: Double((passedDataToProductDetailsVC2?.variants![0].price)! ) ?? 0.0 , numofitem: 1)
         }
     }
     @IBAction func addToFavoriteBtn(_ sender: UIButton) {
@@ -51,14 +51,12 @@ class ProductDetailsViewController: UIViewController {
             addToFavBtn.titleLabel?.textColor = UIColor.white
             
 
-           // addToFavBtn.titleColor(for: UIControl.State.normal)
-           // addToFavBtn.setTitleColor(UIColor.white, for: UIControl.State.normal)
            }
            else if addToFavBtn.backgroundColor == UIColor.blue {
-               addToFavBtn.backgroundColor = UIColor.lightGray
+               //addToFavBtn.backgroundColor = UIColor.lightGray
                addToFavBtn.titleLabel?.textColor = UIColor.white
 
-              // addToFavBtn.setTitleColor(UIColor.white, for: UIControl.State.normal)
+              
            }
         if passedDataToProductDetailsVC != nil {
             db.addOrdertoFavourite(appDelegate: appDelegate, customerid: customerid!, price: Double(itemPrice) ?? 0.0, title: passedDataToProductDetailsVC?.title ?? "", image: passedDataToProductDetailsVC?.image?.src ?? "")

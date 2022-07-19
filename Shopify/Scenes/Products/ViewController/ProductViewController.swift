@@ -41,7 +41,7 @@ class ProductViewController: UIViewController {
         }
     }
 }
-// MARK: - TableViewDelegateAndDataSource
+// MARK: - CollectionViewDelegateAndDataSource
 extension ProductViewController:UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return filteredProductsArray.count

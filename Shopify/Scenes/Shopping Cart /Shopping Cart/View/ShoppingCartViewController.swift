@@ -28,7 +28,7 @@ class ShoppingCartViewController: UIViewController {
         super.viewDidLoad()
         
         
-        
+        print("custom id\(customerID)")
         customerID = Helper.shared.getUserID()
         checkLogin()
         calculateTotal()
@@ -51,7 +51,7 @@ class ShoppingCartViewController: UIViewController {
                           alert.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: nil))
                           self.present(alert, animated: true, completion: nil)
                           
-                          self.customerID = 0
+                          self.customerID = nil
                       }
         }
     }

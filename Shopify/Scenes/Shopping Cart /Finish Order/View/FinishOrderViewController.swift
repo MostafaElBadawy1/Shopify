@@ -120,7 +120,12 @@ class FinishOrderViewController: UIViewController {
         if (coupounsTxt == "SUMMERSALE10OFF") {
             discount = -10.0
             discountLbl.text = "\(-1 * discount)"
-        }else {
+        }else if (coupounsTxt == "santo"){
+            discount = -70.0
+            discountLbl.text = "\(-1 * discount)"
+        }
+        
+        else {
             discount = 0.0
             discountLbl.text = "\(-1 * discount)"
         }

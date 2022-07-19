@@ -22,7 +22,7 @@ class FavouriteViewController: UIViewController {
     }
         override func viewWillAppear(_ animated: Bool) {
        // print(customerId!)
-        orders = db.fetchFavouriteById(appDelegate: appDelegate, customerid: customerId!)
+            orders = db.fetchFavouriteById(appDelegate: appDelegate, customerid: customerId ?? 0)
         for o in orders {
             print(o.title)
         }
